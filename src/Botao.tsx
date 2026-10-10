@@ -3,12 +3,12 @@
 interface PropsBotao
 {
   texto: string,
-  tipo: 'submit' | 'button' | 'reset'
+  tamanho: string
 }
 
-export default function Botao( { texto, tipo } : PropsBotao )
+export default function Botao( { texto, tamanho } : PropsBotao )
 {
   return (
-    <button type={tipo}>{texto}</button>
+    <button>{texto} - {tamanho}</button>
   );
 }
