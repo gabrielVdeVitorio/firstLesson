@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import MostrandoBoolean from './Lista01/MostrandoBoolean.tsx';
+import CidadePais from './Lista01/CidadePais.tsx';
+import Soma from './Lista01/Soma.tsx';
 import PerfilSemProps from './PerfilSemProps.tsx';
 import CardSemProps from './CardSemProps.tsx';
 import Endereco from './Endereco.tsx';
@@ -11,6 +14,11 @@ import Filme from './Filme.tsx';
 import Curso from './Curso.tsx'
 import Pessoa from './Pessoa.tsx';
 import './App.css';
+import Multiplicacao from './Lista01/Multiplicacao.tsx';
+import AnoAtual from './Lista01/AnoAtual.tsx';
+import EstudaOnde from './Lista01/EstudaOnde.tsx';
+import AnosDeIdade from './Lista01/AnosDeIdade.tsx';
+import NumeroFavorito from './Lista01/NumeroFavorito.tsx';
 
 function App() {
 
@@ -26,10 +34,18 @@ function App() {
         <Livro caracDoLivro = {{titulo: 'Harry Potter', autor: 'J. K. Rowling', paginas: 250}}/>
         <Funcionario nome='Gabriel' cargo='Dev Backend C#' departamento='Financeiro' salario={3000}/>
         <Endereco nome='Gabriel' endereco={{cidade: 'Vargem Grande Paulista', estado: 'SP'}}/>
-      </div>
-      <div className='div--sections'>
         <CardSemProps/>
         <PerfilSemProps/>
+      </div>
+      <div className='div--sections'>
+        <Soma var01 = {4} var02 = {8}/>
+        <CidadePais estado='São Paulo' pais='Brasil'/>
+        <MostrandoBoolean bool={true}/>
+        <Multiplicacao fator01 = {5} fator02 = {8}/>
+        <AnoAtual/>
+        <EstudaOnde nome='Lucas' curso='React' escola='Faculdade Flamingo'/>
+        <AnosDeIdade anoNascimento={2000} anoAtual={2026}/>
+        <NumeroFavorito numeroFavorito={7}/>
       </div>
     </main>
   );
