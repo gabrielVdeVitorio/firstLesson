@@ -14,6 +14,18 @@
   background-image: linear-gradient(135deg, #acfaff, #8267ad);
 }
 
+#container.light-mode
+{
+  background-image: none;
+  background-color: #f1f5f9;
+}
+
+#container.dark-mode
+{
+  background-image: none;
+  background-color: #10102f;
+}
+
 #container > .div--sections
 {
   flex: 1;

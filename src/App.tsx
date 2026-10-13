@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import MostrandoBoolean from './Lista01/MostrandoBoolean.tsx';
 import CidadePais from './Lista01/CidadePais.tsx';
 import Soma from './Lista01/Soma.tsx';
@@ -19,6 +18,8 @@ import AnoAtual from './Lista01/AnoAtual.tsx';
 import EstudaOnde from './Lista01/EstudaOnde.tsx';
 import AnosDeIdade from './Lista01/AnosDeIdade.tsx';
 import NumeroFavorito from './Lista01/NumeroFavorito.tsx';
+import PrimeiroClique from './eventos/exercicio01.tsx';
+import Buttons from './eventos/exercicio02.tsx';
 
 function App() {
 
@@ -46,6 +47,8 @@ function App() {
         <EstudaOnde nome='Lucas' curso='React' escola='Faculdade Flamingo'/>
         <AnosDeIdade anoNascimento={2000} anoAtual={2026}/>
         <NumeroFavorito numeroFavorito={7}/>
+        <PrimeiroClique/>
+        <Buttons id='container'/>
       </div>
     </main>
   );
